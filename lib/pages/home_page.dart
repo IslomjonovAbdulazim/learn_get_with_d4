@@ -25,12 +25,10 @@ class HomePage extends GetView<HomeController> {
                   ),
                 ),
                 SizedBox(height: 20),
-                Center(
-                  child: CupertinoButton(
-                    color: Colors.yellow,
-                    onPressed: controller.increment,
-                    child: Text("Increment"),
-                  ),
+                CupertinoButton(
+                  color: Colors.yellow,
+                  onPressed: controller.increment,
+                  child: Center(child: Text("Increment")),
                 ),
               ],
             ),
